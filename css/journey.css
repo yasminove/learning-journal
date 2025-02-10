@@ -1,0 +1,11 @@
+small {
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.wrapper h1 {
+    font-weight: 700;
+    font-family: "Source Sans Pro Bold";
+    width: 65%;
+    font-size: 2rem;
+}
