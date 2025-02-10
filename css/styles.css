@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url('../SourceSansPro-Regular.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro";
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo-sitename, header, ul {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    justify-content: space-between;
+    margin: 0 2em;
+}
+
+.logo-sitename {
+    gap: .3em;
+}
+
+.logo {
+    align-self: center;
+    width: 23px;
+    height: 23px;
+}
+
+.site-name {
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #0E0E0E;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    font-size: 0.75rem;
+    font-weight: 600;
+    /* font-family: "Source Code Pro", serif; */
+    padding-left: 1.3em;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1.875em 1.25em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Source Sans Pro";
+    color: white;
+    background-color: #202020;
+    height: 105px;
+}
+
+.website-name {
+    font-weight: 700;
+    font-family: "Source Sans Pro";
+    font-size: 0.75rem;
+    margin-top: 0.8em;
+    margin-bottom: 0.3em;
+}
+
+.copyright {
+    font-weight: 400;
+    font-family: "Source Sans Pro";
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: violet;
+    cursor: pointer;
+}
+
+@media (min-width: 767px) {
+    header {
+        /* justify-content: space-around; */
+    }
+}
+
+@media (min-width: 767px) {
+    header {
+        /* justify-content: space-around; */
+    }
+}
