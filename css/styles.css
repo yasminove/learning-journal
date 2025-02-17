@@ -151,6 +151,12 @@ footer a {
     cursor: pointer;
 }
 
+.view-more {
+    font-family: "Source Sans Pro Bold";
+    text-align: center;
+    display: block;
+}
+
 @media (min-width: 1279px) {
     header {
         height: 12vh;

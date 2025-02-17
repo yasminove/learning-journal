@@ -52,9 +52,5 @@ small {
         grid-template-rows: 1fr;
     }
 
-    .view-more {
-        font-family: "Source Sans Pro Bold";
-        text-align: center;
-        display: block;
-    }
+   
 }
