@@ -1,0 +1,46 @@
+.wrapper h1 {
+    width: 69%;
+}
+
+@media (min-width: 1279px) {
+
+    .wrapper p {
+        font-family: "Source Sans Pro";
+    }
+
+    .intro {
+        display: flex;
+        gap: 1em;
+    }
+
+    .intro-title {
+        font-family: "Source Sans Pro Bold";
+    }
+    
+    .intro {
+        width: 85vw;
+        margin-left: 5.5em;
+        margin-top: 1em;
+    }
+
+    .personal-journey {
+        width: 75%;
+    }
+
+    .blog-details {
+        margin-left: 4em;
+    }
+
+    .blog-details {
+        width: 75%;
+        margin: 2.5em auto 0;
+    }
+
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-template-rows: 1fr;
+        grid-auto-flow: dense;
+        align-items: center;
+    }
+}

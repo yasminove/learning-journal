@@ -8,6 +8,16 @@
     src: url('../SourceSansPro-Bold.otf');
 }
 
+@font-face {
+    font-family: "Source Sans Pro Light";
+    src: url('../SourceSansPro-Light.otf');
+}
+
+@font-face {
+    font-family: "Source Sans Pro Semibold";
+    src: url('../SourceSansPro-Semibold.otf');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -17,6 +27,7 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
+    color: #090909;
 }
 
 .logo-sitename, header, ul {
@@ -53,14 +64,59 @@ ul {
 ul li {
     font-size: 0.75rem;
     font-weight: 600;
-    /* font-family: "Source Code Pro", serif; */
+    font-family: "Source Sans Pro Semibold";
     padding-left: 1.3em;
 }
 
-.wrapper {
+.wrapper, .grid-wrapper {
     display: grid;
     grid-template-columns: 1fr;
     padding: 1.875em 1.25em;
+}
+
+.wrapper, .grid-wrapper h1 {
+    font-weight: 700;
+    font-family: "Source Sans Pro Bold";
+    width: 65%;
+    font-size: 2rem;
+    margin: 0.8rem 0;
+}
+
+.wrapper, .grid-wrapper p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Source Sans Pro Light";
+    margin-top: 0;
+    color: #151515;
+}
+
+.article small {
+    font-size: 0.75rem;
+}
+
+.article img {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.9em;
+    border-radius: 3px;
+}
+
+.article h2 {
+    margin-top: 0.5625em;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "Source Sans Pro Bold";
+}
+
+.blog-details h2 {
+    font-family: "Source Sans Pro Bold";
+    font-size: 1rem;
+}
+
+.recent-posts {
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Source Sans Pro Bold";
 }
 
 footer {
@@ -77,7 +133,7 @@ footer {
 .website-name {
     font-weight: 700;
     font-family: "Source Sans Pro";
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin-top: 0.8em;
     margin-bottom: 0.3em;
 }
@@ -85,7 +141,7 @@ footer {
 .copyright {
     font-weight: 400;
     font-family: "Source Sans Pro";
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     margin: 0;
 }
 
@@ -95,14 +151,23 @@ footer a {
     cursor: pointer;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1279px) {
     header {
-        /* justify-content: space-around; */
+        height: 12vh;
     }
-}
 
-@media (min-width: 767px) {
-    header {
-        /* justify-content: space-around; */
+    .site-name {
+        font-size: 1.25rem;
     }
-}
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    .grid-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: dense;
+        gap: 1.625em;
+    }
+}    

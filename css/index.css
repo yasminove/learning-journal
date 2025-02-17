@@ -1,12 +1,8 @@
 .hero {
     color: #fff;
     background-image: url('../images/article-image-hero.png');
-    object-fit: cover;
-    height: 75%;
-    /* background-color: tomato; */
-    /* font-family: "Source Code Pro", serif;; */
-    /* width: 900%;
-    height: 75%; */
+    background-size: cover;
+    height: 100%;
 }
 
 .hero-inner {
@@ -19,44 +15,24 @@
 
 .hero-inner-title {
     font-weight: 700;
+    font-family: "Source Sans Pro Bold";
     font-size: 2rem;
     margin-top: 0;
     margin-bottom: 0.2em;
     width: 82%;
+    color: white;
 }
 
 .hero-inner p {
     font-size: 1rem;
     margin-top: 0;
+    width: 82%;
+    font-family: "Source Sans Pro Light";
 }
-
-.article small {
-    /* margin-top: 1em; */
-    /* margin-top: 1em; */
-    font-size: 0.75rem;
-}
-
-.article img {
-    display: block;
-    width: 100%;
-    margin-bottom: 0.9em;
-}
-
-.article h2 {
-    margin-top: 0.5625em;
-    font-weight: 700;
-    font-size: 1.5rem;
-    font-family: "Source Sans Pro";
-}
-
-/* .article p {
-    width: ;
-} */
 
 .view-more {
     font-weight: 700;
     font-family: "Source Sans Pro Bold";
-    /* text-align: center; */
     text-decoration: underline;
     margin: 0 auto;
     cursor: pointer;
@@ -64,22 +40,46 @@
 
 
 @media (min-width: 767px) {
-    .hero h1 {
-        width: 490px;
-    }
-
     .hero p {
         width: 430px;
     }
 }
 
 @media (min-width: 1024px) {
-    .hero h1 {
+    .hero p {
         width: 55%;
+    }
+}
+
+@media (min-width: 1279px) {
+    header {
+        height: 10vh;
+    }
+
+    .site-name {
+        font-size: 1.25rem;
+    }
+
+    .hero {
+        height: 67vh;
+    }
+
+    .hero-inner {
+        padding: 21em 0.5em 0.5em 3em;
+    }
+
+    .hero-inner small {
+        font-size: 1rem;
+    }
+
+    .hero-inner-title { 
+        font-size: 2.5rem;
+        width: 57%;
     }
 
     .hero p {
-        width: 55%;
+        width: 49%;
+        font-size: 1rem;
     }
 }
 
